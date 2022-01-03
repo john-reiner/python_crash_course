@@ -13,26 +13,9 @@ class Car():
         name = self.get_descriptive_name()
         print("The current miles on your " + name + " : " + str(self.odometer_reading) )
 
-    def drive(self):
-        self.odometer_reading += int(input("How many miles? "))
-
     def set_miles(self, miles):
         if self.odometer_reading < miles:
-
             self.odometer_reading = miles
         else: 
             print("cant rollback miles!")
-
-
-
-
-truck = Car('Chevy', "silverado", 2021)
-
-truck.odometer_reading = 21
-
-truck.drive()
-
-truck.set_miles(1000)
-
-print(truck.read_odometer())
         

@@ -20,15 +20,3 @@ class Restaurant():
 
     def increment_number_served(self, number):
         self.number_served += number
-
-naples = Restaurant("naples", "italian")
-old_glory = Restaurant('Old Golory', "american")
-drews = Restaurant("Drews bayshore bistro", "cajan")
-
-naples.set_number_served(990)
-
-print(naples.number_served)
-
-naples.increment_number_served(9)
-
-print(naples.number_served)

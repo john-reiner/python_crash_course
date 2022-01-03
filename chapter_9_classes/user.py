@@ -22,17 +22,3 @@ class User():
 
     def reset_login_attempts(self):
         self.login_attempts = 0
-
-me = User("mfg", "asdf")
-
-me.greet_user()
-
-me.show_info("fdsa")
-me.show_info("fdsa")
-me.show_info("fdsa")
-me.show_info("fdsa")
-
-
-
-
-        
