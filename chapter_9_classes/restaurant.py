@@ -4,6 +4,7 @@ class Restaurant():
         self.restaurant_name = restaurant_name
         self.cusine_type = cusine_type
         self.open = False
+        self.number_served = 0
 
     def describe_restaurant(self):
         if self.open:
@@ -14,18 +15,20 @@ class Restaurant():
         self.open = True
         print(self.restaurant_name.title() + " Is now open!")
 
+    def set_number_served(self, number):
+        self.number_served = number
+
+    def increment_number_served(self, number):
+        self.number_served += number
 
 naples = Restaurant("naples", "italian")
 old_glory = Restaurant('Old Golory', "american")
 drews = Restaurant("Drews bayshore bistro", "cajan")
 
-naples.open_restaurant()
-naples.describe_restaurant()
+naples.set_number_served(990)
 
-old_glory.open_restaurant()
-old_glory.describe_restaurant()
+print(naples.number_served)
 
-drews.describe_restaurant()
-drews.open_restaurant()
-drews.describe_restaurant()
+naples.increment_number_served(9)
 
+print(naples.number_served)
